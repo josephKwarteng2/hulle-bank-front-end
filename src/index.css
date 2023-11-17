@@ -1,5 +1,8 @@
 :root{
   --border-grey: #DFE2E6;
+  --text-grey: #98A1B0;
+  --foundation-orange-o-50: #FFF3F1;
+  --foundation-orange-o-30: #FF8577;
 }
 
 @font-face {
@@ -26,7 +29,7 @@ body {
   margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
+  color: var(--text-grey);
 }
