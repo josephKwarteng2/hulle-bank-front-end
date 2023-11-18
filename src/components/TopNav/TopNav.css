@@ -1,11 +1,21 @@
-.top-nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    border-bottom: 1px solid var(--border-grey);
-    width: 84%;
-    height: 10vh;
+HEAD .top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid var(--border-grey);
+  width: 84%;
+  height: 10%;
 }
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid var(--border-grey);
+  width: 84%;
+  height: 10vh;
+}
+
 
 .top-nav input[type="search"]{
     width: 400px;

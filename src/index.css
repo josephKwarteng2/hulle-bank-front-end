@@ -1,40 +1,48 @@
-:root{
-  --border-grey: #DFE2E6;
-  --text-grey: #98A1B0;
-  --grey-500: #667085;
-  --foundation-orange-o-50: #FFF3F1;
-  --foundation-orange-o-30: #FF8577;
+@font-face {
+  font-family: "DMSansRegular";
+  src: local("DMSansRegular "), url("./assets/fonts/DMSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: DMSansRegular;
-  src: url('./assets/fonts/DMSans-Regular.ttf')format('truetype');
+  font-family: "DMSansMedium";
+  src: local("DMSansMedium "), url("./assets/fonts/DMSans-Medium.ttf");
+}
+@font-face {
+  font-family: "DMSansSemiBold";
+  src: local("DMSansSemiBold "), url("./assets/fonts/DMSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "DMSansBold";
+  src: local("DMSansBold "), url("./assets/fonts/DMSans-Bold.ttf");
 }
 
-@font-face {
-  font-family: DMSansMedium;
-  src: url('./assets/fonts/DMSans-Medium.ttf')format('truetype');
+:root {
+  --secondary-color: #ff8577;
+  --primary-color: #699bf7;
+  --secondary-color-opacity: #9277ff;
+  --font-color-gray: #667085;
+  --font-color-gray-2: #98a1b0;
+  --font-color-gray-3: #5f6c72;
+  --font-color-gray-4: #5f6c72;
+  --font-color-purple: #9685ad;
+  --font-color-dark: #101828;
+  --font-color-white: #ffffff;
+  --bg-color: #ffffff;
+  --border-color: #f5f6f7;
+  --box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
 }
 
-@font-face {
-  font-family: DMSansBold;
-  src: url('./assets/fonts/DMSans-Bold.ttf')format('truetype');
-}
-
-@font-face {
-  font-family: DMSansSemibold;
-  src: url('./assets/fonts/DMSans-SemiBold.ttf')format('truetype');
+* {
+  transition: all 0.3s ease-in-out;
 }
 
 body {
   margin: 0;
+  background: var(--bg-color);
+  font-family: "ManropeMedium";
 }
 
-a{
-  text-decoration: none;
-  color: var(--text-grey);
-}
-
-.visibly-hidden{
-  display: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

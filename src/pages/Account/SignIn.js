@@ -71,6 +71,11 @@ const SignIn = () => {
           <a href="/forgot-password">Forgot password?</a>
         </p>
         <button type="submit">Sign In</button>
+        <div className="sign-up">
+          <p>
+            Don't have an account? <a href="/sign-up">Sign up</a>
+          </p>
+        </div>
       </Form>
     </Formik>
   );
