@@ -1,64 +1,64 @@
 .side-nav{
-    position: fixed;
-    left: 0;
-    width: 16%;
-    height: 100%;
-    border-right: 1px solid var(--border-grey);
-    font-family: DMSansRegular;
+  position: fixed;
+  left: 0;
+  width: 16%;
+  height: 100%;
+  border-right: 1px solid var(--border-grey);
+  font-family: DMSansRegular;
 }
 
 .side-nav .logo-container{
-    height: 10vh;
-    width: 100%;
-    border-bottom: 1px solid var(--border-grey);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid var(--border-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .side-nav .logo-container > svg{
-    margin-left: 20%;
+  margin-left: 20%;
 }
 
 .side-nav-links{
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .side-nav a{
-    padding-left: 12%;
-    border: 0.5px solid #fff;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  padding-left: 12%;
+  border: 0.5px solid #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .side-nav svg{
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .side-nav a:hover{
-    border: 0.5px solid var(--foundation-orange-o-50);
-    background: linear-gradient(90deg, rgba(255, 133, 119, 0.18) 0.07%, rgba(196, 196, 196, 0.00) 65.25%);
+  border: 0.5px solid var(--foundation-orange-o-50);
+  background: linear-gradient(90deg, rgba(255, 133, 119, 0.18) 0.07%, rgba(196, 196, 196, 0.00) 65.25%);
 }
 
 .side-nav a.active{
-    border: 0.5px solid var(--foundation-orange-o-50);
-    background: linear-gradient(90deg, rgba(255, 133, 119, 0.18) 0.07%, rgba(196, 196, 196, 0.00) 65.25%);
-    border-left: 3px solid var(--foundation-orange-o-30);
-    color: var(--foundation-orange-o-30);
+  border: 0.5px solid var(--foundation-orange-o-50);
+  background: linear-gradient(90deg, rgba(255, 133, 119, 0.18) 0.07%, rgba(196, 196, 196, 0.00) 65.25%);
+  border-left: 3px solid var(--foundation-orange-o-30);
+  color: var(--foundation-orange-o-30);
 }
 
 .side-nav a.active:not(.no-styling) path{
-    stroke: var(--foundation-orange-o-30);
+  stroke: var(--foundation-orange-o-30);
 }
 
 .side-nav-bottom{
-    height: 14%;
-    margin-top: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 14%;
+  margin-top: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
