@@ -1,6 +1,7 @@
 :root{
   --border-grey: #DFE2E6;
   --text-grey: #98A1B0;
+  --grey-500: #667085;
   --foundation-orange-o-50: #FFF3F1;
   --foundation-orange-o-30: #FF8577;
 }
@@ -32,4 +33,8 @@ body {
 a{
   text-decoration: none;
   color: var(--text-grey);
+}
+
+.visibly-hidden{
+  display: none;
 }
