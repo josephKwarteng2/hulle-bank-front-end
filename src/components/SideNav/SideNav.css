@@ -4,7 +4,7 @@
     width: 16%;
     height: 100%;
     border-right: 1px solid var(--border-grey);
-    font-family: "DM Sans Regular";
+    font-family: DMSansRegular;
 }
 
 .side-nav .logo-container{
@@ -47,7 +47,7 @@
 .side-nav a.active{
     border: 0.5px solid var(--foundation-orange-o-50);
     background: linear-gradient(90deg, rgba(255, 133, 119, 0.18) 0.07%, rgba(196, 196, 196, 0.00) 65.25%);
-    border-left: 1.5px solid var(--foundation-orange-o-30);
+    border-left: 3px solid var(--foundation-orange-o-30);
     color: var(--foundation-orange-o-30);
 }
 
@@ -56,8 +56,8 @@
 }
 
 .side-nav-bottom{
-    height: 15%;
-    margin-top: 40%;
+    height: 14%;
+    margin-top: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
