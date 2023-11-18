@@ -51,7 +51,7 @@
     color: var(--foundation-orange-o-30);
 }
 
-.side-nav a.active path{
+.side-nav a.active:not(.no-styling) path{
     stroke: var(--foundation-orange-o-30);
 }
 

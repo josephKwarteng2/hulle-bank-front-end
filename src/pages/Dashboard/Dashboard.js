@@ -1,7 +1,15 @@
-import React from "react";
+import TopNav from "../../components/TopNav/TopNav";
+import SideNav from "../../components/SideNav/SideNav";
+import "./Dashboard.css";
 
 const Dashboard = () => {
-  return <></>;
+  return (
+    <>
+      <TopNav />
+      <SideNav />
+      <div className="dashboard"></div>
+    </>
+  );
 };
 
 export default Dashboard;
