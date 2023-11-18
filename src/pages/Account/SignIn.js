@@ -9,6 +9,10 @@ const validationSchema = Yup.object({
     .required("Email is required"),
   password: Yup.string()
     .min(8, "Password must be at least 8 characters")
+    .matches(
+      /^(?=.*[A-Z])(?=.*[0-9])/,
+      "Password must contain at least one uppercase letter and one number"
+    )
     .required("Password is required"),
 });
 
@@ -37,8 +41,6 @@ const SignIn = () => {
     >
       <Form className="signin-card">
         <div>
-          {/* <h3>SignIn</h3>
-          <h3>SignUp</h3> */}
           <label htmlFor="email" className="email-label">
             Email Address
           </label>
