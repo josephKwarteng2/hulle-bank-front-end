@@ -1,0 +1,20 @@
+.add-account-button {
+    /* position: absolute;
+    top: 70px; */
+    display: flex;
+    font-family: "DMSansRegular";
+    width: 137px;
+    height: 44px;
+    /* padding: 10px 16px; */
+    /* margin-left: 900px; */
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 31px;
+    border: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--base-white, #fff);
+  
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
+  }

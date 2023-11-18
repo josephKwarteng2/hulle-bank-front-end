@@ -73,7 +73,7 @@
   text-decoration: none;
 } */
 
-button {
+.signin-card button {
   width: 200px;
   height: 30px;
   background: var(--secondary-color);
@@ -105,4 +105,9 @@ button {
 .signin-card .forgot-password a {
   text-decoration: none;
   color: #2da5f3;
+}
+
+.sign-up {
+  font-size: 14px;
+  margin: 50px;
 }

@@ -1,0 +1,10 @@
+.heading {
+    /* position: absolute; */
+    font-family: "DMSansSemiBold";
+    font-size: 23px;
+    display: inline-block;
+    max-width: 400px;
+    /* margin-left: 270px; */
+    /* top: 70px; */
+    /* padding-bottom: 26px; */
+  }

@@ -6,3 +6,30 @@
     width: 84%;
     height: 10vh;
 }
+
+.top-nav form{
+    position: relative;
+}
+
+.top-nav input[type="search"]{
+    width: 400px;
+    height: 40px;
+    border-radius: 11px;
+    padding: 10px 14px;
+    padding-left: 50px !important; /*14 + 28 + 8*/
+    border: 1px solid var(--border-grey);
+    color: var(--grey-500);
+}
+
+.top-nav input[type="search"]:focus{
+    outline: none;
+}
+
+.top-nav button{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
