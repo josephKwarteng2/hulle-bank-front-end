@@ -20,8 +20,8 @@ const SideNav = () => {
         <LogoIcon />
       </div>
       <div class="side-nav-links">
-        <NavLink to={"/home"}>
-          <HomeIcon /> Home
+        <NavLink to={"/dashboard"}>
+          <HomeIcon /> Dashboard
         </NavLink>
         <NavLink to={"/transactions"}>
           <TransactionsIcon /> Transactions
@@ -41,7 +41,7 @@ const SideNav = () => {
         <NavLink to={"/invoices"}>
           <InvoicesIcon /> Invoices
         </NavLink>
-        <NavLink to={"/teammembers"}>
+        <NavLink to={"/home"} className={"no-styling"}>
           <TeamMembersHomeIcon /> Team Members
         </NavLink>
       </div>

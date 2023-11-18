@@ -1,45 +1,10 @@
-@font-face {
-  font-family: "DMSansRegular";
-  src: local("DMSansRegular "), url("./assets/fonts/DMSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "DMSansMedium";
-  src: local("DMSansMedium "), url("./assets/fonts/DMSans-Medium.ttf");
-}
-@font-face {
-  font-family: "DMSansSemiBold";
-  src: local("DMSansSemiBold "), url("./assets/fonts/DMSans-SemiBold.ttf");
-}
-@font-face {
-  font-family: "DMSansBold";
-  src: local("DMSansBold "), url("./assets/fonts/DMSans-Bold.ttf");
-}
-
-:root {
-  --secondary-color: #ff8577;
-  --primary-color: #699bf7;
-  --secondary-color-opacity: #9277ff;
-  --font-color-gray: #667085;
-  --font-color-gray-2: #98a1b0;
-  --font-color-gray-3: #5f6c72;
-  --font-color-gray-4: #5f6c72;
-  --font-color-purple: #9685ad;
-  --font-color-dark: #101828;
-  --font-color-white: #ffffff;
-  --bg-color: #ffffff;
-  --border-color: #f5f6f7;
-  --box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
-}
-
-* {
-  transition: all 0.3s ease-in-out;
-}
-
 body {
   margin: 0;
-  background: var(--bg-color);
-  font-family: "DMSansRegular";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
