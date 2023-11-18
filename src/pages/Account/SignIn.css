@@ -106,3 +106,8 @@ button {
   text-decoration: none;
   color: #2da5f3;
 }
+
+.sign-up {
+  font-size: 14px;
+  margin: 50px;
+}

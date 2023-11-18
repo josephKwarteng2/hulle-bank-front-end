@@ -35,9 +35,9 @@ function ForgotPassword() {
           <button className="btn-send-code">Send Code</button>
           <div className="signin-alternative">
             <p>
-              Already have account? <a href="/signin">Sign In</a>
+              Already have account? <a href="/">Sign In</a>
               <p>
-                Don't have account? <a href="/signin">Sign Up</a>
+                Don't have account? <a href="/sign-up">Sign Up</a>
               </p>
             </p>
           </div>

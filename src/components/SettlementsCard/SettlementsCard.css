@@ -1,0 +1,9 @@
+.settlements-card {
+  width: 264px;
+  height: 185px;
+  margin-left: 270px;
+
+  border-radius: 15px;
+  border: 1px solid var(--foundation-blue-b-30, #f0f2f5);
+  background: var(--foundation-blue-b-10, #fafbfb);
+}
