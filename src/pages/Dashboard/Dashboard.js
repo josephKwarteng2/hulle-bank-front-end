@@ -25,7 +25,7 @@ const Dashboard = () => {
         setTotalCharges(data.totalCharges);
       })
       .catch((error) => console.error("Error fetching data:, error"));
-  });
+  }, []);
   return (
     <>
       <TopNav />
