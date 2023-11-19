@@ -5,6 +5,8 @@
   height: 100%;
   border-right: 1px solid var(--border-grey);
   font-family: DMSansRegular;
+  background-color: var(--bg-color);
+  z-index: 999;
 }
 
 .side-nav .logo-container {
