@@ -17,13 +17,13 @@
 }
 
 :root {
-  --foundation-orange-o-50: #FFF3F1;
-  --foundation-orange-o-30: #FF8577;
+  --foundation-orange-o-50: #fff3f1;
+  --foundation-orange-o-30: #ff8577;
   --secondary-color: #ff8577;
   --primary-color: #699bf7;
   --secondary-color-opacity: #9277ff;
-  --border-grey: #DFE2E6;
-  --text-grey: #98A1B0;
+  --border-grey: #dfe2e6;
+  --text-grey: #98a1b0;
   --grey-500: #667085;
   --font-color-gray: #667085;
   --font-color-gray-2: #98a1b0;
@@ -44,14 +44,14 @@
 body {
   margin: 0;
   background: var(--bg-color);
-  font-family: "ManropeMedium";
+  font-family: "DMSansRegular";
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--text-grey);
 }
 
-.visibly-hidden{
+.visibly-hidden {
   display: none;
 }

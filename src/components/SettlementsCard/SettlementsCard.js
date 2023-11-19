@@ -1,8 +1,12 @@
-import React from "react";
 import "./SettlementsCard.css";
 
-const SettlementsCard = () => {
-  return <div className="settlements-card"></div>;
+const SettlementsCard = ({ title, value }) => {
+  return (
+    <div className="settlements-card">
+      <p>{title}</p>
+      <h1>{value}</h1>
+    </div>
+  );
 };
 
 export default SettlementsCard;
