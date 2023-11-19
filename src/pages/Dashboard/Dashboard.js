@@ -30,23 +30,37 @@ const Dashboard = () => {
     <>
       <TopNav />
       <SideNav />
+      {/* This div represents the whole page, padding and everything accounted for, feel free
+          to put items inside the div */}
       <div className="dashboard">
-        <div class="text-wrapper">
-          <Heading heading="Dashboard" />
-          <SubTitle subtitle="Track and manage customer information and activities. Click transfer to send to your persoanl account" />
+        {/* This <header/> stands for the whole row on top just under the top nav */}
+        <header>
+          <div class="text-wrapper">
+            <Heading heading="Dashboard" />
+            <SubTitle subtitle="Track and manage customer information and activities. Click transfer to send to your persoanl account" />
+          </div>
+          <div class="buttons-wrapper">
+            <AddAccountButton />
+            <TransferButton />
+          </div>
+        </header>
+        {/* End of header */}
+        {/* Start of card list, flexed this container */}
+        <div class="card-list">
+          <SettlementsCard
+            title="Paid Settlements"
+            value={totalPaidSettlements}
+          />
+          <SettlementsCard
+            title="Pending Settlements"
+            value={totalPendingSettlements}
+          />
+          <SettlementsCard title="Earnings" value={totalEarnings} />
+          <SettlementsCard title="Charges" value={totalCharges} />
         </div>
-        <div class="buttons-wrapper">
-          <AddAccountButton />
-          <TransferButton />
-        </div>
+        {/* End of card-list */}
+        {/* If you need any container, just create a div */}
       </div>
-      <SettlementsCard title="Paid Settlements" value={totalPaidSettlements} />
-      <SettlementsCard
-        title="Pending Settlements"
-        value={totalPendingSettlements}
-      />
-      <SettlementsCard title="Earnings" value={totalEarnings} />
-      <SettlementsCard title="Charges" value={totalCharges} />
     </>
   );
 };

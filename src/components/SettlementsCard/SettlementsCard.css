@@ -1,7 +1,7 @@
 .settlements-card {
-  width: 20vw;
+  width: 22%;
   height: 25vh;
-  margin-left: 240px;
+  /* margin-left: 240px; */ /* removed this because card is now in the page, the page padding will apply */
   border-radius: 15px;
   border: 1px solid var(--foundation-blue-b-30, #f0f2f5);
   background: var(--foundation-blue-b-10, #fafbfb);

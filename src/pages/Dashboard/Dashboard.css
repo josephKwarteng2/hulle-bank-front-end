@@ -2,6 +2,9 @@
     padding-top: 10vh;
     padding: calc(10vh + 41px) 41px 41px 41px; /* watch how i added my custom padding to existing 10vh top padding */
     margin-left: 16%;
+}
+
+.dashboard header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,4 +13,11 @@
 .buttons-wrapper{
     display: flex;
     gap: 10px;
+}
+
+.dashboard .card-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
 }
