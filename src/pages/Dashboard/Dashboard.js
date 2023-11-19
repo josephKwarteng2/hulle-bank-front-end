@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const Dashboard = () => {
-  const [totalPaidSettlements, setTotalPaidSettlements] = useState(0);
+  const [totalPaidSettlements, setTotalPaidSettlements] = useState(1, 400, 294);
   const [totalPendingSettlements, setTotalPendingSettlements] = useState(0);
   const [totalEarnings, setTotalEarningSettlements] = useState(0);
   const [totalCharges, setTotalCharges] = useState(0);
