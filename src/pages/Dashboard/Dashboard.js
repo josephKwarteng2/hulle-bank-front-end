@@ -12,11 +12,19 @@ import axios from "axios";
 const Dashboard = () => {
   const [totalPaidSettlements, setTotalPaidSettlements] = useState(0);
   const [totalPendingSettlements, setTotalPendingSettlements] = useState(0);
-  const [totalEarnings, setTotalEawrningSettlements] = useState(0);
+  const [totalEarnings, setTotalEarningSettlements] = useState(0);
   const [totalCharges, setTotalCharges] = useState(0);
 
   useEffect(() => {
-    const readData = async () => {};
+    fetch("_stdb.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setTotalPaidSettlements(data.totalPaidSettlements);
+        setTotalPendingSettlements(data.totalPendingSettlements);
+        setTotalEarningSettlements(data.totalEarningSettlements);
+        setTotalCharges(data.totalCharges);
+      })
+      .catch((error) => console.error("Error fetching data:, error"));
   });
   return (
     <>
@@ -32,7 +40,13 @@ const Dashboard = () => {
           <TransferButton />
         </div>
       </div>
-      <SettlementsCard />
+      <SettlementsCard title="Paid Settlements" value={totalPaidSettlements} />
+      <SettlementsCard
+        title="Pending Settlements"
+        value={totalPendingSettlements}
+      />
+      <SettlementsCard title="Earnings" value={totalEarnings} />
+      <SettlementsCard title="Charges" value={totalCharges} />
     </>
   );
 };
