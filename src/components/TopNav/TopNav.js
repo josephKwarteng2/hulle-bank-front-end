@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./TopNav.css";
 import { SearchIcon } from "../Icons/icons";
+import profilePicture from "../../assets/images/user-image.svg";
+import { ArrowDownIcon } from "../Icons/icons";
 
 const TopNav = () => {
   const [query, setQuery] = useState("");
@@ -24,6 +26,14 @@ const TopNav = () => {
           <SearchIcon />
         </button>
       </form>
+      <div class="user-profile-container">
+        <img src={profilePicture} alt="profile" />
+        <div class="user-details">
+          <h2>Obinna Festus</h2>
+          <p>Owner</p>
+        </div>
+        <ArrowDownIcon />
+      </div>
     </div>
   );
 };
