@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 14px;
 }
 
 .side-nav a {
@@ -71,4 +72,5 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 14px;
 }

@@ -8,6 +8,7 @@ import SubTitle from "../../components/Heading/SubTitle";
 import SettlementsCard from "../../components/SettlementsCard/SettlementsCard";
 import "./Dashboard.css";
 import AddAccountModal from "../../components/Modal/AddAccountModal";
+import TransactionsAnalytics from "../../components/TransactionAnalytics/TransactionAnalytics";
 
 const Dashboard = () => {
   const [totalPaidSettlements, setTotalPaidSettlements] = useState(1400);
@@ -37,18 +38,18 @@ const Dashboard = () => {
       <div className="dashboard">
         {/* This <header/> stands for the whole row on top just under the top nav */}
         <header>
-          <div class="text-wrapper">
+          <div className="text-wrapper">
             <Heading heading="Dashboard" />
             <SubTitle subtitle="Track and manage customer information and activities. Click transfer to send to your persoanl account" />
           </div>
-          <div class="buttons-wrapper">
+          <div className="buttons-wrapper">
             <AddAccountButton />
             <TransferButton />
           </div>
         </header>
         {/* End of header */}
         {/* Start of card list, flexed this container */}
-        <div class="card-list">
+        <div className="card-list">
           <SettlementsCard
             title="Paid Settlements"
             value={totalPaidSettlements}
@@ -72,6 +73,8 @@ const Dashboard = () => {
         </div>
         {/* End of card-list */}
         {/* If you need any container, just create a div */}
+        <div className="analytics"></div>
+        <TransactionsAnalytics />
       </div>
     </>
   );
