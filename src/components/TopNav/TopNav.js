@@ -10,7 +10,7 @@ const TopNav = () => {
   return (
     <div className="top-nav">
       <form>
-        <label for="search" className="visibly-hidden">
+        <label htmlFor="search" className="visibly-hidden">
           Search
         </label>
         <input
@@ -26,9 +26,9 @@ const TopNav = () => {
           <SearchIcon />
         </button>
       </form>
-      <div class="user-profile-container">
+      <div className="user-profile-container">
         <img src={profilePicture} alt="profile" />
-        <div class="user-details">
+        <div className="user-details">
           <h2>Obinna Festus</h2>
           <p>Owner</p>
         </div>

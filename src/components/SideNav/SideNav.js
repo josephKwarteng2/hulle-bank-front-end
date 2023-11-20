@@ -16,10 +16,10 @@ import { NavLink, Link } from "react-router-dom";
 const SideNav = () => {
   return (
     <div className="side-nav">
-      <div class="logo-container">
+      <div className="logo-container">
         <LogoIcon />
       </div>
-      <div class="side-nav-links">
+      <div className="side-nav-links">
         <NavLink to={"/dashboard"}>
           <HomeIcon /> Dashboard
         </NavLink>
@@ -45,7 +45,7 @@ const SideNav = () => {
           <TeamMembersHomeIcon /> Team Members
         </NavLink>
       </div>
-      <div class="side-nav-bottom">
+      <div className="side-nav-bottom">
         <NavLink to={"/settings"}>
           <SettingsIcon /> Account Settings
         </NavLink>
