@@ -15,6 +15,7 @@ const Dashboard = () => {
   const [totalPendingSettlements, setTotalPendingSettlements] = useState(0);
   const [totalEarnings, setTotalEarningSettlements] = useState(0);
   const [totalCharges, setTotalCharges] = useState(0);
+  const [modalDisplay, setModalDisplay] = useState(false);
 
   useEffect(() => {
     fetch("_stdb.json")
@@ -30,7 +31,11 @@ const Dashboard = () => {
 
   return (
     <>
-      {/* <AddAccountModal /> */}
+      {modalDisplay && (
+        <AddAccountModal
+          toggleModalDisplay={() => setModalDisplay(!modalDisplay)}
+        />
+      )}
       <TopNav />
       <SideNav />
       {/* This div represents the whole page, padding and everything accounted for, feel free
@@ -43,7 +48,7 @@ const Dashboard = () => {
             <SubTitle subtitle="Track and manage customer information and activities. Click transfer to send to your persoanl account" />
           </div>
           <div className="buttons-wrapper">
-            <AddAccountButton />
+            <AddAccountButton onClick={() => setModalDisplay(!modalDisplay)} />
             <TransferButton />
           </div>
         </header>
@@ -73,7 +78,6 @@ const Dashboard = () => {
         </div>
         {/* End of card-list */}
         {/* If you need any container, just create a div */}
-        <div className="analytics"></div>
         <TransactionsAnalytics />
       </div>
     </>

@@ -420,7 +420,7 @@ export const ArrowDownIcon = () => {
   );
 };
 
-const CloseButton = ({ onClick }) => {
+export const CloseButton = ({ onClick }) => {
   return (
     <svg
       onClick={onClick}
@@ -441,4 +441,22 @@ const CloseButton = ({ onClick }) => {
   );
 };
 
-export default CloseButton;
+export const PlusButton = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="21"
+      height="20"
+      viewBox="0 0 21 20"
+      fill="none"
+    >
+      <path
+        d="M10.4998 4.16663V15.8333M4.6665 9.99996H16.3332"
+        stroke="#667085"
+        strokeWidth="1.67"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
