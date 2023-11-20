@@ -4,5 +4,35 @@
   /* margin-left: 240px; */ /* removed this because card is now in the page, the page padding will apply */
   border-radius: 15px;
   border: 1px solid var(--foundation-blue-b-30, #f0f2f5);
-  background: var(--foundation-blue-b-10, #fafbfb);
+  /* background: var(--foundation-blue-b-10, #fafbfb); */
+  padding-left: 20px;
+  color: var(--font-color-gray-5);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settlements-card:hover {
+  background-color: #fafbfb;
+}
+
+.divider {
+  width: 200px;
+  height: 1px;
+  background-color: #fff3f1;
+  margin-top: -40px;
+}
+
+.info-icon {
+  display: flex;
+  padding-left: 150px;
+  /* padding-bottom: -20px; */
+  margin-top: -30px;
+}
+
+.period {
+  margin-top: -10px;
+}
+
+.value {
+  margin-top: 20px;
 }
