@@ -49,8 +49,8 @@ label {
   gap: 8px;
 }
 
-input,
-select {
+.history-div input,
+.history-div select {
   margin-bottom: 10px;
   padding: 8px;
   font-size: 14px;

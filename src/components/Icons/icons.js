@@ -402,6 +402,7 @@ export const SearchIcon = () => {
 export const ArrowDownIcon = () => {
   return (
     <svg
+      className="arrow-down-svg"
       width="15"
       height="15"
       viewBox="0 0 15 15"
@@ -456,6 +457,74 @@ export const PlusButton = () => {
         strokeWidth="1.67"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const InfoIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="19"
+      height="18"
+      viewBox="0 0 19 18"
+      fill="none"
+    >
+      <path
+        d="M9.5 16.5C13.625 16.5 17 13.125 17 9.00003C17 4.87503 13.625 1.50003 9.5 1.50003C5.375 1.50003 2 4.87503 2 9.00003C2 13.125 5.375 16.5 9.5 16.5Z"
+        stroke="#7A8699"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.5 6.00003V9.75003"
+        stroke="#7A8699"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.49609 12H9.50283"
+        stroke="#7A8699"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ModalCheckMarkIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="21"
+      height="20"
+      viewBox="0 0 21 20"
+      fill="none"
+    >
+      <rect
+        x="1.125"
+        y="0.625"
+        width="18.75"
+        height="18.75"
+        rx="9.375"
+        fill="white"
+      />
+      <rect
+        x="1.125"
+        y="0.625"
+        width="18.75"
+        height="18.75"
+        rx="9.375"
+        stroke="#D0D5DD"
+        strokeWidth="1.25"
+      />
+      <path
+        d="M14.0143 6.50492L9.12363 11.3967L6.9857 9.25766C6.64582 8.91777 6.0948 8.91777 5.75492 9.25766C5.41503 9.59754 5.41503 10.1486 5.75492 10.4884L8.50766 13.2423C8.67122 13.4047 8.89162 13.4964 9.12363 13.4964C9.35331 13.4964 9.57488 13.4047 9.73844 13.2423L15.2451 7.7357C15.585 7.39582 15.585 6.8448 15.2451 6.50492C14.9052 6.16503 14.3542 6.16503 14.0143 6.50492Z"
+        fill="#D0D5DD"
       />
     </svg>
   );

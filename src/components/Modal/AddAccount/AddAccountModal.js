@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { ArrowDownIcon, CloseButton, PlusButton } from "../Icons/icons";
+import { ArrowDownIcon, CloseButton, PlusButton } from "../../Icons/icons";
 import "./AddAccountModal.css";
-import gtBankIcon from "../../assets/images/GUARANTY Trust Bank Icon.png";
-import zenithBankIcon from "../../assets/images/Zenith Bank Icon.png";
-import xButton from "../../assets/images/x button no circle.svg";
+import gtBankIcon from "../../../assets/images/GUARANTY Trust Bank Icon.png";
+import zenithBankIcon from "../../../assets/images/Zenith Bank Icon.png";
+import xButton from "../../../assets/images/x button no circle.svg";
+import ModalButtons from "../../Button/ModalButtons";
 
 const AddAccountModal = ({ toggleModalDisplay }) => {
   const [account, setAccount] = useState("");
@@ -20,8 +21,8 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
 
   return (
     <>
-      <div className="modal-overlay">
-        <div className="modal">
+      <div className="global-modal-overlay">
+        <div className="global-modal add-account-modal">
           <div className="modal-header">
             <div>
               <h2>Settlements account</h2>
@@ -53,6 +54,7 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
                 Account
               </label>
               <select
+                className="global-modal-select"
                 name="account"
                 id="account"
                 value={account}
@@ -74,15 +76,10 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
             <div className="button-base">
               <PlusButton /> Add new account
             </div>
-            <div className="buttons">
-              <button
-                className="global-button-primary"
-                onClick={toggleModalDisplay}
-              >
-                Cancel
-              </button>
-              <button className="global-button-secondary">Continue</button>
-            </div>
+            <ModalButtons
+              secondaryButtonText="Continue"
+              toggleModalDisplay={toggleModalDisplay}
+            />
           </div>
         </div>
       </div>
