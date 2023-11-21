@@ -1,46 +1,90 @@
 import { useState } from "react";
-import CloseButton from "../Icons/icons";
+import { ArrowDownIcon, CloseButton, PlusButton } from "../Icons/icons";
 import "./AddAccountModal.css";
+import gtBankIcon from "../../assets/images/GUARANTY Trust Bank Icon.png";
+import zenithBankIcon from "../../assets/images/Zenith Bank Icon.png";
+import xButton from "../../assets/images/x button no circle.svg";
 
-const AddAccountModal = () => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  const close = () => {
-    setIsVisible((prev) => !prev);
-  };
+const AddAccountModal = ({ toggleModalDisplay }) => {
+  const [account, setAccount] = useState("");
+  const accountOptions = [
+    {
+      name: "GT Bank Account",
+      value: "0256347",
+    },
+    {
+      name: "Ecobank Account",
+      value: "0223345",
+    },
+  ];
 
   return (
     <>
-      <div className={`modal-overlay ${isVisible ? "" : "visibly-hidden"}`}>
+      <div className="modal-overlay">
         <div className="modal">
           <div className="modal-header">
             <div>
               <h2>Settlements account</h2>
               <p>Enter one or more accounts to send your earnings</p>
             </div>
-            <CloseButton onClick={close} />
+            <CloseButton onClick={toggleModalDisplay} />
           </div>
-          <div className="modal-content"></div>
-        </div>
-        {/* <div className="modal-top">
           <div className="modal-content">
-            <h2>Settlement Accounts</h2>
-            <p>Enter one or more accounts to send your earnings</p>
+            <div className="badges">
+              <div className="badge">
+                <img src={gtBankIcon} alt="gt bank" />
+                <div className="description">
+                  <h3>James Campion Drivers</h3>
+                  <p>0556894392</p>
+                </div>
+                <img src={xButton} alt="close" />
+              </div>
+              <div className="badge">
+                <img src={zenithBankIcon} alt="zenith bank" />
+                <div className="description">
+                  <h3>Tassy Omah</h3>
+                  <p>0556894392</p>
+                </div>
+                <img src={xButton} alt="close" />
+              </div>
+            </div>
             <form>
-              <input
-                type="text"
-                placeholder="Enter account number"
-                className="modal-input"
-              />
-              <input
-                type="text"
-                placeholder="Enter account name"
-                className="modal-input"
-              />
-              <button className="modal-button">Add Account</button>
+              <label htmlFor="account" className="visibly-hidden">
+                Account
+              </label>
+              <select
+                name="account"
+                id="account"
+                value={account}
+                onChange={(e) => {
+                  setAccount(e.target.value);
+                }}
+              >
+                <option value="" disabled>
+                  Select from existing accounts or
+                </option>
+                {accountOptions.map((account) => (
+                  <option key={account.value} value={account.value}>
+                    {account.name}
+                  </option>
+                ))}
+              </select>
+              <ArrowDownIcon />
             </form>
+            <div className="button-base">
+              <PlusButton /> Add new account
+            </div>
+            <div className="buttons">
+              <button
+                className="global-button-primary"
+                onClick={toggleModalDisplay}
+              >
+                Cancel
+              </button>
+              <button className="global-button-secondary">Continue</button>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
