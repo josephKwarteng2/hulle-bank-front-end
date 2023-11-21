@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <AddSettlementAccountModal />
+      {/* <AddSettlementAccountModal /> */}
       {modalDisplay && (
         <AddAccountModal
           toggleModalDisplay={() => setModalDisplay(!modalDisplay)}
