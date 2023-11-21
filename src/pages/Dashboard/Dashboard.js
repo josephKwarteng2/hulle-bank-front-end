@@ -7,8 +7,9 @@ import AddAccountButton from "../../components/Button/AddAccountButton";
 import SubTitle from "../../components/Heading/SubTitle";
 import SettlementsCard from "../../components/SettlementsCard/SettlementsCard";
 import "./Dashboard.css";
-import AddAccountModal from "../../components/Modal/AddAccountModal";
+// import AddAccountModal from "../../components/Modal/AddAccountModal";
 import TransactionsAnalytics from "../../components/TransactionAnalytics/TransactionAnalytics";
+import TransactionHistory from "../../components/TransactionHistory/TransactionHistory";
 
 const Dashboard = () => {
   const [totalPaidSettlements, setTotalPaidSettlements] = useState(1400);
@@ -64,6 +65,7 @@ const Dashboard = () => {
             title="Total Earnings"
             value={totalEarnings}
             period="This Year"
+            percentage={24}
           />
           <SettlementsCard
             title="Total Charges"
@@ -73,8 +75,11 @@ const Dashboard = () => {
         </div>
         {/* End of card-list */}
         {/* If you need any container, just create a div */}
-        <div className="analytics"></div>
         <TransactionsAnalytics />
+
+        <div className="transaction-history-container">
+          <TransactionHistory />
+        </div>
       </div>
     </>
   );

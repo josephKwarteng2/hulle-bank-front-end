@@ -1,11 +1,11 @@
 .settlements-card {
-  width: 22%;
-  height: 25vh;
+  width: 23%;
+  height: 28vh;
   /* margin-left: 240px; */ /* removed this because card is now in the page, the page padding will apply */
   border-radius: 15px;
   border: 1px solid var(--foundation-blue-b-30, #f0f2f5);
   /* background: var(--foundation-blue-b-10, #fafbfb); */
-  padding-left: 20px;
+  padding: 10px 20px 10px 20px;
   color: var(--font-color-gray-5);
   font-size: 14px;
   cursor: pointer;
@@ -16,16 +16,20 @@
 }
 
 .divider {
-  width: 200px;
+  width: 100%;
   height: 1px;
   background-color: #fff3f1;
+  display: block;
   margin-top: -40px;
+}
+
+.settlements-card:hover > span {
+  background: #dfe2e6;
 }
 
 .info-icon {
   display: flex;
   padding-left: 150px;
-  /* padding-bottom: -20px; */
   margin-top: -30px;
 }
 
@@ -36,3 +40,16 @@
 .value {
   margin-top: 20px;
 }
+
+.percentage-container {
+  margin-left: 140px;
+  width: 42px;
+  height: 24px;
+  /* background-color: #ff8577; */
+  border-radius: 12px;
+  opacity: 0.05;
+}
+
+/* .percentage {
+  color: red;
+} */

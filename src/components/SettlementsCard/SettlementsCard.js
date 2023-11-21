@@ -3,7 +3,7 @@ import React from "react";
 import "./SettlementsCard.css";
 import IconInfo from "../../assets/info-circle.svg";
 
-const SettlementsCard = ({ title, value, period }) => {
+const SettlementsCard = ({ title, value, period, percentage }) => {
   return (
     <div className="settlements-card">
       <p>{title}</p>
@@ -12,8 +12,11 @@ const SettlementsCard = ({ title, value, period }) => {
       </div>
       <h1 className="value">GHc{value}</h1>
       <p className="period">{period}</p>
+      <div className="percentage-container">
+        <p className="percentage">{percentage}%</p>
+      </div>
 
-      <div className="divider"></div>
+      <span className="divider"></span>
     </div>
   );
 };
