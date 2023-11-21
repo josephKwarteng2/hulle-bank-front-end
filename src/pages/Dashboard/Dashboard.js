@@ -7,7 +7,7 @@ import AddAccountButton from "../../components/Button/AddAccountButton";
 import SubTitle from "../../components/Heading/SubTitle";
 import SettlementsCard from "../../components/SettlementsCard/SettlementsCard";
 import "./Dashboard.css";
-// import AddAccountModal from "../../components/Modal/AddAccountModal";
+import AddAccountModal from "../../components/Modal/AddAccountModal";
 import TransactionsAnalytics from "../../components/TransactionAnalytics/TransactionAnalytics";
 import TransactionHistory from "../../components/TransactionHistory/TransactionHistory";
 

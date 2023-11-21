@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./TransactionHistory.css";
 import Calendar from "../../assets/icon-calendar.svg";
+import DownArrow from "../../assets/Icon-arrow-down.svg";
 
 const TransactionHistory = () => {
   const [transactions, setTransactions] = useState([]);
@@ -49,9 +50,10 @@ const TransactionHistory = () => {
   };
 
   return (
-    <div>
+    <div className="history-div">
       <div className="history-header">
         <p>Transaction History</p>
+        <img src={DownArrow} alt="down=arrow" className="down-arrow" />
         <div className="transaction-search-bar">
           <label htmlFor="search" className="visibly-hidden">
             Search:

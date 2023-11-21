@@ -12,9 +12,9 @@ const SettlementsCard = ({ title, value, period, percentage }) => {
       </div>
       <h1 className="value">GHc{value}</h1>
       <p className="period">{period}</p>
-      <div className="percentage-container">
+      {/* <div className="percentage-container">
         <p className="percentage">{percentage}%</p>
-      </div>
+      </div> */}
 
       <span className="divider"></span>
     </div>
