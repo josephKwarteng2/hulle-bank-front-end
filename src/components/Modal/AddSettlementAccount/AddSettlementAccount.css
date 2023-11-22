@@ -1,0 +1,97 @@
+.add-settlement-account-modal{
+    padding: 28px;
+    width: 40%;
+}
+
+.add-settlement-account-modal form{
+    margin-bottom: 2px;
+}
+
+.add-settlement-account-modal h2{
+    font-family: DMSansBold;
+    color: #101828;
+    font-size: 1.375rem;
+    margin-top: 20px;
+}
+
+.add-settlement-account-modal p{
+    font-family: DMSansRegular;
+    color: #98A1B0;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+
+.add-settlement-account-modal .close-button{
+    position: absolute;
+    top: -38px;
+    right: 0px;
+}
+
+.add-settlement-account-modal input, .add-settlement-account-modal select{
+    margin-bottom: 16px;
+}
+
+.add-settlement-account-modal .global-modal-input + svg{
+    position: absolute;
+    top: 49%;
+    right: 16px;
+    cursor: pointer;
+}
+
+.add-settlement-account-modal .global-buttons-container{
+    margin-top: 0;
+}
+
+.add-settlement-account-modal .buttons-base{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-settlement-account-modal input[type="radio"]{
+    display: none;
+}
+
+.add-settlement-account-modal input[type="radio"] + span{
+    display: flex;
+    align-items: center;
+    color: #344054;
+    font-size: 0.875rem;
+    font-family: DMSansRegular;
+}
+
+.add-settlement-account-modal input[type="radio"] + span > svg{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.add-settlement-account-modal input[type="radio"]:checked + span > svg{
+    fill: blue;
+}
+
+.add-settlement-account-modal input[type="radio"]:checked + span > svg path{
+    fill: #fff;
+}
+
+.add-settlement-account-modal input[type="radio"]:checked + span > svg rect:nth-child(2){
+    stroke: #fff;
+}
+
+.add-settlement-account-modal .badge-base{
+    border: 1.5px solid #F0F2F5;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-family: DMSansRegular;
+    font-size: 0.875rem;
+    color: #7A8699;
+    margin-bottom: 16px;
+    background: #FAFBFB;
+    display: flex;
+    gap: 15px;
+}
+
+.add-settlement-account-modal .badge-base-details p{
+    margin: 0;
+    font-size: 0.75rem;
+}

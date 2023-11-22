@@ -7,9 +7,10 @@ import AddAccountButton from "../../components/Button/AddAccountButton";
 import SubTitle from "../../components/Heading/SubTitle";
 import SettlementsCard from "../../components/SettlementsCard/SettlementsCard";
 import "./Dashboard.css";
-import AddAccountModal from "../../components/Modal/AddAccountModal";
+import AddAccountModal from "../../components/Modal/AddAccount/AddAccountModal";
 import TransactionsAnalytics from "../../components/TransactionAnalytics/TransactionAnalytics";
 import TransactionHistory from "../../components/TransactionHistory/TransactionHistory";
+import AddSettlementAccountModal from "../../components/Modal/AddSettlementAccount/AddSettlementAccountModal";
 
 const Dashboard = () => {
   const [totalPaidSettlements, setTotalPaidSettlements] = useState(1400);
@@ -32,6 +33,7 @@ const Dashboard = () => {
 
   return (
     <>
+      {/* <AddSettlementAccountModal /> */}
       {modalDisplay && (
         <AddAccountModal
           toggleModalDisplay={() => setModalDisplay(!modalDisplay)}

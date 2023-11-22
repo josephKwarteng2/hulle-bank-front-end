@@ -1,23 +1,10 @@
-.modal{
-  min-height: 50vh;
-  min-width: 38%;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.modal h2, .modal p, .modal h3{
-  margin: 0;
-}
-
-.modal h2{
+.add-account-modal h2{
   font-size: 1.25rem;
   font-family: DMSansBold;
   color: #091E42;
 }
 
-.modal p{
+.add-account-modal p{
   font-size: 0.875rem;
   font-family: DMSansRegular;
   color: #7A8699;
@@ -31,7 +18,7 @@
   color: #A6AEBB;
 }
 
-.modal-header{
+.add-account-modal .modal-header{
   height: 25%;
   width: 100%;
   background: #F5F6F7;
@@ -42,60 +29,20 @@
   padding: 20px 30px 20px 30px;
 }
 
-.modal-content{
+.add-account-modal .modal-content{
   height: 75%;
   width: 100%;
   padding: 40px;
 }
 
-.modal-content .buttons{
-  display: flex;
-  justify-content: flex-end;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.modal-content select{
-  border: 1.5px solid #F0F2F5;
-  border-radius: 10px;
-  width: 100%;
-  padding: 16px;
-  font-family: DMSansRegular;
-  font-size: 0.875rem;
-  color: #98A1B0;
-  appearance: none;
-}
-
-.modal-content select:focus{
-  outline: none;
-}
-
-.modal-content select > option:not(:disabled){
-  color: #091E42;
-}
-
-.modal-content form{
-  position: relative;
-  margin-bottom: 18px;
-}
-
-.modal-content form svg{
-  position: absolute;
-  top: 35%;
-  right: 16px;
-}
-
-.modal-content form svg path{
-  stroke: #8993A4;
-}
-
-.button-base{
+.add-account-modal .button-base{
   font-size: 0.875rem;
   color: #42526D;
   display: flex;
   align-items: center;
   padding: 10px 16px 10px 0px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .badges{

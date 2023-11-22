@@ -61,7 +61,7 @@ a {
   display: none !important;
 }
 
-.modal-overlay {
+.global-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,10 +74,24 @@ a {
   z-index: 20;
 }
 
+.global-modal{
+  min-height: 50vh;
+  min-width: 35%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.global-modal h2, .global-modal p, .global-modal h3{
+  margin: 0;
+}
+
 .global-button-primary, .global-button-secondary{
   padding: 12px 18px;
   border-radius: 30px;
   font-size: 0.825rem;
+  cursor: pointer;
 }
 
 .global-button-primary{
@@ -90,4 +104,46 @@ a {
   border: 1.5px solid ;
   background: #091E42;
   color: #fff;
+}
+
+.global-modal-select, .global-modal-input{
+  border: 1.5px solid #F0F2F5;
+  border-radius: 10px;
+  width: 100%;
+  padding: 16px;
+  font-family: DMSansRegular;
+  font-size: 0.875rem;
+  color: #98A1B0;
+  appearance: none;
+}
+
+.global-modal-select{
+  cursor: pointer;
+}
+
+.global-modal-select:focus, .global-modal-input{
+  outline: none;
+}
+
+.global-modal-select > option:not(:disabled){
+  color: #091E42;
+}
+
+.global-modal-input::placeholder{
+  color: #98A1B0;
+}
+
+.global-modal form{
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.global-modal-select + svg{
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.global-modal form .arrow-down-svg path{
+  stroke: #8993A4;
 }
