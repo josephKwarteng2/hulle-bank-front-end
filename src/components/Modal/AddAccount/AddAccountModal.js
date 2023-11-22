@@ -19,6 +19,11 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
     },
   ];
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("submit!!");
+  };
+
   return (
     <>
       <div className="global-modal-overlay">
@@ -49,7 +54,7 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
                 <img src={xButton} alt="close" />
               </div>
             </div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label htmlFor="account" className="visibly-hidden">
                 Account
               </label>
@@ -72,14 +77,14 @@ const AddAccountModal = ({ toggleModalDisplay }) => {
                 ))}
               </select>
               <ArrowDownIcon />
+              <div className="button-base">
+                <PlusButton /> Add new account
+              </div>
+              <ModalButtons
+                secondaryButtonText="Continue"
+                toggleModalDisplay={toggleModalDisplay}
+              />
             </form>
-            <div className="button-base">
-              <PlusButton /> Add new account
-            </div>
-            <ModalButtons
-              secondaryButtonText="Continue"
-              toggleModalDisplay={toggleModalDisplay}
-            />
           </div>
         </div>
       </div>

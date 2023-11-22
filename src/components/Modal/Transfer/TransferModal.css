@@ -1,0 +1,112 @@
+.transfer-modal{
+    width: 42%;
+}
+
+.transfer-modal h2{
+    font-size: 1.25rem;
+    font-family: DMSansBold;
+    color: #091E42;
+}
+  
+.transfer-modal p{
+    font-size: 0.875rem;
+    font-family: DMSansRegular;
+    color: #7A8699;
+}
+
+.transfer-modal label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.transfer-modal input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    color: #091E42;
+}
+
+.transfer-modal .modal-header{
+    height: 25%;
+    width: 100%;
+    background: #F5F6F7;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 27px 17px 27px;
+}
+
+.transfer-modal .modal-content{
+    height: 75%;
+    width: 100%;
+    padding: 0 30px 25px 30px;
+}
+
+.transfer-modal .global-modal-input{
+    margin-bottom: 20px;
+}
+
+.transfer-recurrence{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-family: DMSansRegular;
+    margin: 25px 0 25px 0;
+    color: #7A8699;
+}
+
+.transfer-recurrence input[type="radio"]{
+    display: none;
+}
+
+.transfer-recurrence label span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1.5px solid #fff;
+    border-bottom: 1.5px solid #DFE2E6;
+    padding: 10px;
+    border-radius: 6px 6px 0px 0px;
+    cursor: pointer;
+}
+
+.transfer-recurrence input[type="radio"]:checked + span{
+    color: #091E42;
+    border: 1.5px solid #F5F6F7;
+    background: #F5F6F7;
+    border-radius: 6px;
+}
+
+.transfer-recurrence input[type="radio"]:checked + span svg .styled-svg{
+    stroke: #091E42;
+}
+
+.use-total-sales-amount{
+    font-family: DMSansRegular;
+    color: #354764;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+
+.transfer-modal .settlement-types{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.transfer-modal .settlement-types h2{
+    font-family: DMSansRegular;
+    font-size: 0.85rem;
+    color: #354764;
+}
+
+.transfer-modal .settlement-types p{
+    font-family: DMSansRegular;
+    font-size: 0.75rem;
+    color: #98A1B0;
+}

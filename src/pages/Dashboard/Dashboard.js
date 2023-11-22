@@ -11,13 +11,15 @@ import AddAccountModal from "../../components/Modal/AddAccount/AddAccountModal";
 import TransactionsAnalytics from "../../components/TransactionAnalytics/TransactionAnalytics";
 import TransactionHistory from "../../components/TransactionHistory/TransactionHistory";
 import AddSettlementAccountModal from "../../components/Modal/AddSettlementAccount/AddSettlementAccountModal";
+import TransferModal from "../../components/Modal/Transfer/TransferModal";
 
 const Dashboard = () => {
   const [totalPaidSettlements, setTotalPaidSettlements] = useState(1400);
   const [totalPendingSettlements, setTotalPendingSettlements] = useState(0);
   const [totalEarnings, setTotalEarningSettlements] = useState(0);
   const [totalCharges, setTotalCharges] = useState(0);
-  const [modalDisplay, setModalDisplay] = useState(false);
+  const [addAccountModal, setAddAccountModal] = useState(false);
+  const [tranferModal, setTransferModal] = useState(false);
 
   useEffect(() => {
     fetch("_stdb.json")
@@ -34,13 +36,18 @@ const Dashboard = () => {
   return (
     <>
       {/* <AddSettlementAccountModal /> */}
-      {modalDisplay && (
-        <AddAccountModal
-          toggleModalDisplay={() => setModalDisplay(!modalDisplay)}
-        />
-      )}
       <TopNav />
       <SideNav />
+      {addAccountModal && (
+        <AddAccountModal
+          toggleModalDisplay={() => setAddAccountModal(!addAccountModal)}
+        />
+      )}
+      {tranferModal && (
+        <TransferModal
+          toggleModalDisplay={() => setTransferModal(!tranferModal)}
+        />
+      )}
       {/* This div represents the whole page, padding and everything accounted for, feel free
           to put items inside the div */}
       <div className="dashboard">
@@ -51,8 +58,10 @@ const Dashboard = () => {
             <SubTitle subtitle="Track and manage customer information and activities. Click transfer to send to your persoanl account" />
           </div>
           <div className="buttons-wrapper">
-            <AddAccountButton onClick={() => setModalDisplay(!modalDisplay)} />
-            <TransferButton />
+            <AddAccountButton
+              onClick={() => setAddAccountModal(!addAccountModal)}
+            />
+            <TransferButton onClick={() => setTransferModal(!tranferModal)} />
           </div>
         </header>
         {/* End of header */}

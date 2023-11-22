@@ -529,3 +529,61 @@ export const ModalCheckMarkIcon = () => {
     </svg>
   );
 };
+
+export const RotateIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      fill="none"
+    >
+      <path
+        className="styled-svg"
+        d="M11.1676 4.31C10.5151 4.115 9.79506 3.9875 9.00006 3.9875C5.40756 3.9875 2.49756 6.8975 2.49756 10.49C2.49756 14.09 5.40756 17 9.00006 17C12.5926 17 15.5026 14.09 15.5026 10.4975C15.5026 9.1625 15.0976 7.9175 14.4076 6.8825"
+        stroke="#8993A4"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        className="styled-svg"
+        d="M12.0977 4.49L9.93018 2"
+        stroke="#8993A4"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        className="styled-svg"
+        d="M12.0973 4.49001L9.56982 6.33501"
+        stroke="#8993A4"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const RefreshIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="19"
+      height="18"
+      viewBox="0 0 19 18"
+      fill="none"
+    >
+      <path
+        className="styled-svg"
+        d="M17 9C17 13.14 13.64 16.5 9.5 16.5C5.36 16.5 2.8325 12.33 2.8325 12.33M2.8325 12.33H6.2225M2.8325 12.33V16.08M2 9C2 4.86 5.33 1.5 9.5 1.5C14.5025 1.5 17 5.67 17 5.67M17 5.67V1.92M17 5.67H13.67"
+        stroke="#8993A4"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};

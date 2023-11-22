@@ -61,6 +61,10 @@ a {
   display: none !important;
 }
 
+hr{
+  border-color: #DFE2E6;
+}
+
 .global-modal-overlay {
   position: fixed;
   top: 0;
@@ -115,6 +119,7 @@ a {
   font-size: 0.875rem;
   color: #98A1B0;
   appearance: none;
+  margin-bottom: 18px;
 }
 
 .global-modal-select{
@@ -135,7 +140,6 @@ a {
 
 .global-modal form{
   position: relative;
-  margin-bottom: 18px;
 }
 
 .global-modal-select + svg{
