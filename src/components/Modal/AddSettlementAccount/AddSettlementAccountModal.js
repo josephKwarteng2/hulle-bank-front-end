@@ -7,7 +7,7 @@ import {
   InfoIcon,
   ModalCheckMarkIcon,
 } from "../../Icons/icons";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ModalButtons from "../../Button/ModalButtons";
 
 const AddSettlementAccountModal = () => {
@@ -17,9 +17,11 @@ const AddSettlementAccountModal = () => {
     alias: "",
     primaryAccount: false,
   });
+  const primaryAccount = useRef(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(settlementAccountDetails);
   };
 
   const handleChange = (event) => {
@@ -31,11 +33,14 @@ const AddSettlementAccountModal = () => {
     }));
   };
 
-  const handleRadioChange = () => {
+  const handleRadioChange = (event) => {
+    const { current } = primaryAccount;
+    primaryAccount.current = !current;
     setSettlementAccountDetails((prev) => ({
       ...prev,
-      primaryAccount: !prev.primaryAccount,
+      primaryAccount: primaryAccount.current,
     }));
+    console.log(primaryAccount.current);
   };
 
   return (
@@ -58,6 +63,7 @@ const AddSettlementAccountModal = () => {
               className="global-modal-select"
               value={settlementAccountDetails.bank}
               onChange={handleChange}
+              required
             >
               <option value="" disabled>
                 Select your bank
@@ -74,6 +80,7 @@ const AddSettlementAccountModal = () => {
             <input
               className="global-modal-input"
               type="number"
+              required
               name="accountNumber"
               placeholder="Account Number"
               id="account-number"
@@ -105,9 +112,10 @@ const AddSettlementAccountModal = () => {
                 <input
                   type="radio"
                   name="primaryAccount"
-                  value={settlementAccountDetails.primaryAccount}
+                  value={primaryAccount.current}
                   onClick={handleRadioChange}
-                  checked={settlementAccountDetails.primaryAccount}
+                  checked={primaryAccount.current}
+                  readOnly
                 />
                 <span>
                   <ModalCheckMarkIcon /> Set as primary account
