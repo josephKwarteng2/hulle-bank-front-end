@@ -7,9 +7,9 @@ const SettlementsCard = ({ title, value, period, percentage }) => {
   return (
     <div className="settlements-card">
       <p>{title}</p>
-      <div className="info-icon">
+      {/* <div className="info-icon">
         <img src={IconInfo} alt="icon-info" />
-      </div>
+      </div> */}
       <h1 className="value">GHc{value}</h1>
       <p className="period">{period}</p>
       {/* <div className="percentage-container">

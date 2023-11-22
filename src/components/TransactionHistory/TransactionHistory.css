@@ -9,8 +9,6 @@
   border-radius: 7px;
   border: 1px solid #f0f2f5;
   background: transparent;
-  /* margin: 0px auto;   */
-  gap: 8px;
 }
 
 .down-arrow {
@@ -22,6 +20,7 @@
   padding: 20px;
   font-family: "DMSansMedium";
   font-size: 18px;
+  color: #091e42;
 }
 
 label {
@@ -31,26 +30,21 @@ label {
 
 .transaction-search-bar input {
   margin: 25px auto;
-  width: 425px;
+  width: 320px;
   height: 46px;
   border-radius: 10px;
   border: 1px solid #dfe2e6;
 }
 
 .filter-container {
-  display: flex;
-  width: 10px;
-  padding: 13px 56px;
-  margin: 25px auto;
-  justify-content: center;
-  align-items: center;
+  width: 8vw;
+  height: 40px;
   border-radius: 8px;
-  border: 1px solid #dfe2e6;
+  border: 1px solid #efefef;
   gap: 8px;
 }
 
-input,
-select {
+.filter-container {
   margin-bottom: 10px;
   padding: 8px;
   font-size: 14px;
@@ -64,6 +58,7 @@ table {
   outline: auto #fafbfb;
   border-radius: 7px;
   cursor: pointer;
+  justify-content: space-evenly;
 }
 
 th {
@@ -76,7 +71,6 @@ th {
 
 th,
 td {
-  /* border: 1px solid #ddd; */
   padding: 12px;
   text-align: left;
   font-size: 14px;
@@ -98,9 +92,7 @@ tr:hover {
 .calendar-container {
   display: inline;
   width: 40px;
-  padding: 9px 10px 11px 10px;
-  justify-content: center;
-  align-items: center;
+  /* padding: 4px; */
   background-color: #f5f6f7;
   border-radius: 20px;
   margin: 30px;
@@ -120,6 +112,92 @@ tr:hover {
   color: #243757;
 }
 
+.account-settled-on p {
+  color: #98a1b0;
+  font-size: 14px;
+}
+
 .ref-id {
   color: #475467;
 }
+
+.header-content {
+  display: flex;
+  margin: 30px;
+  gap: 20px;
+}
+
+.date-container {
+  width: 8vw;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+}
+
+.date-container img {
+  padding: 10px;
+}
+
+.date-container p {
+  margin-top: -26px;
+  padding: 20px;
+  margin: -53px 20px;
+  font-family: "DMSansRegular";
+  font-size: 14px;
+}
+
+.date-arrow-down {
+  margin: 10px 70px;
+}
+
+.document-download {
+  width: 8vw;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+}
+
+.document-download p {
+  margin-top: -53px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.download-icon {
+  padding: 10px;
+}
+
+.time-settled {
+  position: relative;
+  left: 45%;
+  color: var(--text-grey);
+}
+
+.icon-red {
+  position: relative;
+  top: 6px;
+}
+
+/* .section-status {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  
+  /* padding-top: 60px; 
+} 
+*/
+
+.status-icons {
+  position: relative;
+  right: 35px;
+  top: 25px;
+}
+
+.calendar {
+  position: relative;
+  top: 20px;
+}
+
+/* .view-all-details {
+  margin-top: -20px;
+} */

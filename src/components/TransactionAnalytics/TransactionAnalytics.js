@@ -25,6 +25,7 @@ const TransactionsAnalytics = () => {
         </div>
       )}
       <img src={IconArrow} alt="arrow-down" className="icon-arrow-down" />
+      <div className="container-small"></div>
     </div>
   );
 };

@@ -1,5 +1,31 @@
-.settlements{
-    padding-top: 10vh;
-    margin-left: 16%;
-    padding: calc(10vh + 41px) 41px 41px 41px;
+.settlements {
+  padding-top: 10vh;
+  padding: calc(10vh + 41px) 41px 41px 41px; /* watch how i added my custom padding to existing 10vh top padding */
+  margin-left: 16%;
+}
+
+.settlements header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settlements-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.settlements-status {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #091e42;
+}
+
+.all-settlements {
+  display: flex;
+  width: 363px;
+  height: 185px;
+  border-radius: 15px;
+  border: 1px solid #f0f2f5;
 }

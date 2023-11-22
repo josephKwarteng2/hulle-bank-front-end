@@ -5,7 +5,10 @@
     "charges": 5.0,
     "refId": "7974638HG4",
     "totalAmountSettled": 100.0,
-    "status": "Paid"
+    "status": "Paid",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 15, 2023 ",
@@ -13,7 +16,10 @@
     "charges": 7.5,
     "refId": "1644638HG4",
     "totalAmountSettled": 150.0,
-    "status": "Pending"
+    "status": "Pending",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 20, 2023 ",
@@ -21,7 +27,10 @@
     "charges": 10.0,
     "refId": "5644638HG4",
     "totalAmountSettled": 200.0,
-    "status": "Paid"
+    "status": "Paid",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 20, 2023 ",
@@ -29,7 +38,10 @@
     "charges": 5.0,
     "refId": "4644638HG4",
     "totalAmountSettled": 100.0,
-    "status": "Pending"
+    "status": "Pending",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
 
   {
@@ -38,7 +50,10 @@
     "charges": 7.5,
     "refId": "8644638HG4",
     "totalAmountSettled": 150.0,
-    "status": "Paid"
+    "status": "Paid",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 18, 2023 ",
@@ -46,7 +61,10 @@
     "charges": 10.0,
     "refId": "9644638HG4",
     "totalAmountSettled": 200.0,
-    "status": "Failed"
+    "status": "Failed",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 18, 2023 ",
@@ -54,7 +72,10 @@
     "charges": 5.0,
     "refId": "3554638HG4",
     "totalAmountSettled": 100.0,
-    "status": "Pending"
+    "status": "Pending",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 18, 2023 ",
@@ -62,16 +83,21 @@
     "charges": 7.5,
     "refId": "6644638HG4",
     "totalAmountSettled": 150.0,
-    "status": "Paid"
+    "status": "Paid",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 18, 2023 ",
-    "timeSettled": "12:25",
     "accountSettledOn": "Single Account",
     "charges": 10.0,
     "refId": "8944638HG4",
     "totalAmountSettled": 200.0,
-    "status": "Failed"
+    "status": "Failed",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   },
   {
     "dateSettled": "Mar 18, 2023 ",
@@ -79,6 +105,9 @@
     "charges": 5.0,
     "refId": "3644638HG4",
     "totalAmountSettled": 100.0,
-    "status": "Paid"
+    "status": "Paid",
+    "viewAll": "Details",
+    "supportingText": "GE & Sons, 0556876321 ",
+    "timeSettled": "12:25PM"
   }
 ]
